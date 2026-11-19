@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Rate My Idea</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Rate My Idea</h1>
+    <p class="subtitle">Type your idea. Get a rating based on AI + live GitHub trends.</p>
+  </header>
+
+  <main>
+    <section class="input-section">
+      <textarea id="ideaInput" placeholder="Describe your idea in detail... e.g. 'A mobile app that ...'"></textarea>
+      <div class="controls">
+        <button id="rateBtn">Rate</button>
+        <label class="ai-toggle">
+          <input type="checkbox" id="useAI" /> Use AI (requires API key)
+        </label>
+        <input type="password" id="apiKey" placeholder="OpenAI API key (optional)" />
+      </div>
+    </section>
+
+    <section class="result-section" id="resultSection" hidden>
+      <div class="gauge-wrap">
+        <svg id="gauge" viewBox="0 0 200 120" width="320" height="192">
+          <path d="M 20 100 A 80 80 0 0 1 180 100" fill="none" stroke="#222" stroke-width="18" stroke-linecap="round"/>
+          <path id="gaugeArc" d="M 20 100 A 80 80 0 0 1 180 100" fill="none" stroke="#4caf50" stroke-width="18" stroke-linecap="round" stroke-dasharray="251.3" stroke-dashoffset="251.3"/>
+          <text id="scoreText" x="100" y="95" text-anchor="middle" font-size="34" fill="#fff">0</text>
+          <text x="100" y="115" text-anchor="middle" font-size="12" fill="#aaa">out of 100</text>
+        </svg>
+        <div id="verdict" class="verdict">-</div>
+      </div>
+
+      <div class="breakdown">
+        <h3>Breakdown</h3>
+        <ul id="breakdownList"></ul>
+      </div>
+
+      <div class="thoughts">
+        <h3>AI Thoughts</h3>
+        <p id="thoughtsText"></p>
+      </div>
+    </section>
+
+    <section class="trends-section">
+      <h2>Live Trends (GitHub)</h2>
+      <div id="trends" class="trends-grid">Loading trends...</div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
