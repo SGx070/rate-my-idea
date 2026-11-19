@@ -48,9 +48,7 @@ It also brings in recently trending GitHub repositories to give you a glimpse of
 ## 🖥️ Preview
 
 <!-- Add your actual application screenshot here -->
-<p align="center">
-  <img src="assets/screenshot.png" alt="Rate My Idea application preview" width="90%" />
-</p>
+![Rate My Idea Screenshot](assets/Screenshot1.png)![Rate My Idea Screenshot](assets/Screenshot2.png)
 
 > Replace this placeholder with a screenshot of your actual application.
 
