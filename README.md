@@ -50,7 +50,6 @@ It also brings in recently trending GitHub repositories to give you a glimpse of
 <!-- Add your actual application screenshot here -->
 ![Rate My Idea Screenshot](assets/Screenshot1.png)![Rate My Idea Screenshot](assets/Screenshot2.png)
 
-> Replace this placeholder with a screenshot of your actual application.
 
 ## ⚙️ How It Works
 
@@ -162,12 +161,13 @@ rate-my-idea/
 ├── styles.css       # Styling and layout
 ├── app.js           # Scoring, AI and GitHub integration
 ├── assets/
-│   └── screenshot.png
+│   └── Screenshot1.png
+|    └──Screenshot2.png
 ├── LICENSE
 └── README.md
 ```
 
-The `assets/screenshot.png` file is an optional addition for the README preview.
+The `assets/Screenshot1.png` & `assets/Screenshot2.png` file is an optional addition for the README preview.
 
 ## 🔮 Future Improvements
 
